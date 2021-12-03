@@ -1,0 +1,18 @@
+ul {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  li {
+    list-style: none;
+    a {
+      color: white;
+      text-decoration: none;
+      &.favourite{
+        color:red;
+      }
+    }
+  }
+}
