@@ -1,0 +1,14 @@
+.heroes {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  background-color: black;
+  .hero {
+    margin: 0px 2px;
+    opacity: 0.8;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
