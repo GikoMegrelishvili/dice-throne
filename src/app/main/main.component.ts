@@ -14,6 +14,6 @@ export class MainComponent implements OnInit {
   }
 
   public onHeroClicked(){
-
+    //აქ
   }
 }
