@@ -1,0 +1,52 @@
+.slider {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display:flex;
+  .btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.678);
+    position: absolute;
+    top: 50%;
+    &.next {
+      right: 20px;
+    }
+    &.prev {
+      left: 20px;
+    }
+  }
+  .left-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .character-desc {
+      display: flex;
+      flex-direction: column;
+      flex-direction: center;
+      align-items: center;
+      width: 70%;
+      height: 100%;
+      color:orange;
+      .weapon-desc{
+        margin:20px;
+      }
+    }
+  }
+  .right-side{
+    width: 50%;
+    height: 100%;
+    position:relative;
+    img{
+      position:absolute;
+      top:-20px;
+      height: 800px;
+      width: auto;
+    }
+  }
+}

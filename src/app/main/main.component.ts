@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  public hero:string = "Monk";
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public onHeroClicked(){
+    //აქ
+  }
 }

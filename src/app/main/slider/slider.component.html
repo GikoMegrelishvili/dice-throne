@@ -1,0 +1,29 @@
+<div
+  class="slider"
+  [style.background-image]="
+    'url(../../../assets/images/Slider/' + heroName + '/background.png)'
+  "
+>
+  <div class="btn next"></div>
+  <div class="btn prev"></div>
+  <div class="left-side">
+    <div class="character-desc">
+      <img
+        class="logo"
+        src="../../../assets/images/Slider/{{ heroName }}/title.png"
+        alt="Pyromancer logo"
+      />
+      <p class="desc">
+        {{ description }}
+      </p>
+      <span class="weapon-desc">Weapon of choice: {{ weapon }}</span>
+      <img
+        src="../../../assets/images/Slider/{{ heroName }}/complexity.png"
+        alt="Pyromancer Complexity"
+      />
+    </div>
+  </div>
+  <div class="right-side">
+    <img src="../../../assets/images/Slider/{{ heroName }}/hero.png" alt="Pyromancer" />
+  </div>
+</div>
