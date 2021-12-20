@@ -1,7 +1,2 @@
-<app-hero-selector ></app-hero-selector>
-<app-slider></app-slider>
-
-
-<!-- აქ -->
-<!-- (heroClicked)="onHeroClicked($event)" -->
-<!-- [heroName]="hero" -->
+<app-hero-selector (heroClicked)="onHeroClick($event)" [heroes]="heroes"></app-hero-selector>
+<app-slider [heroName]="selectedHero"></app-slider>

@@ -7,13 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  public hero:string = "Monk";
+  public selectedHero:string = "Monk";
+  public heroes = [
+    'Artificer',
+    'Barbarian',
+    'Cursed Pirate',
+    'Gunslinger',
+    'Huntress',
+    'Monk',
+    'Moon-Elf',
+    'Ninja',
+    'Paladin',
+    'Pyromancer',
+    'Samurai',
+    'Seraph',
+    'Shadow-Thief',
+    'Tactician',
+    'Treant',
+    'Vampire-Lord',
+  ];
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  public onHeroClicked(){
-    //აქ
+  public onHeroClick(hero:string):void{
+    this.selectedHero = hero;
   }
+
 }

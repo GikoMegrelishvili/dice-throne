@@ -1,12 +1,5 @@
 <div class="heroes">
-  <div class="hero" *ngFor="let hero of heroes">
-    <img
-      src="../../../assets/images/Hero-Selector/{{ hero }}.png"
-      alt="{{ hero }}"
-    />
+  <div *ngFor="let hero of heroes" (click)="emitHeroClicked(hero)" class="hero" >
+    <img src="../../../assets/images/Hero-Selector/{{ hero }}.png" alt="{{ hero }}" />
   </div>
 </div>
-
-
-<!-- აქ -->
-<!-- (click)="onHeroClick(hero)"  -->
